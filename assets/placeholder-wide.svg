@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <pattern id="gridPattern" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#edf2f7" stroke-width="1"/>
+    </pattern>
+  </defs>
+  
+  <rect width="1200" height="450" fill="url(#bgGrad)"/>
+  <rect width="1200" height="450" fill="url(#gridPattern)"/>
+  <rect x="6" y="6" width="1188" height="438" rx="8" fill="none" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="6 4"/>
+  
+  <g>
+        <rect x="555" y="180" width="90" height="60" rx="6" fill="none" stroke="#94a3b8" stroke-width="2.5"/>
+        <circle cx="578" cy="203" r="8" fill="#cbd5e1"/>
+        <path d="M 560 235 L 590 210 L 615 230 L 625 223 L 640 235 Z" fill="#cbd5e1"/>
+        </g>
+  
+  <text x="600" y="260" font-family="'Segoe UI', Roboto, Helvetica, sans-serif" font-size="20" font-weight="600" fill="#475569" text-anchor="middle" dominant-baseline="central">Placeholder Sección Panorámica</text>
+  <text x="600" y="285" font-family="'Segoe UI', Roboto, Helvetica, sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle" dominant-baseline="central">1200 × 450 px</text>
+</svg>

@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Sociojurídico | Universidad de la Costa (CUC)</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portal oficial del Centro Sociojurídico de la Universidad de la Costa (CUC). Espacio de proyección social, consultoría jurídica y fortalecimiento comunitario.">
+    <meta name="keywords" content="centro sociojuridico, consultorio juridico, cuc, barranquilla, derecho, investigacion sociojuridica, comunidad, asesoria legal">
+    <meta name="author" content="Universidad de la Costa (CUC)">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Centro Sociojurídico | CUC">
+    <meta property="og:description" content="Promovemos el acceso a la justicia, la investigación y la transformación social en la región Caribe.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.cuc.edu.co/centro-sociojuridico">
+    <meta property="og:image" content="./assets/placeholder-hero.svg">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css?v=63">
+</head>
+<body>
+
+    <!-- HEADER INSTITUCIONAL -->
+    <header class="main-header">
+        <div class="header-container">
+            <!-- Logotipo oficial -->
+            <a href="#home" class="nav-logo" aria-label="Volver al inicio - Centro Sociojurídico">
+                <img src="./assets/logo_cisyp_2024.png" alt="Logotipo oficial Centro Sociojurídico CUC">
+            </a>
+            
+            <!-- Botón del menú hamburguesa para móviles -->
+            <button class="menu-toggle" aria-label="Abrir menú de navegación" aria-controls="main-navigation" aria-expanded="false">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            
+            <!-- Menú de navegación principal -->
+            <nav id="main-navigation" aria-label="Navegación principal">
+                <a href="#sobre-nosotros">Sobre Nosotros</a>
+                <a href="#portafolio">Servicios</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#lineas-investigacion">Líneas de Investigación</a>
+                <a href="#equipo">Equipo</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            
+            <!-- Selector de Idioma e Botón -->
+            <div class="header-actions">
+                <div class="lang-selector">
+                    <button class="lang-btn" aria-label="Seleccionar idioma" aria-expanded="false">
+                        <img src="./assets/flag_co.svg" alt="Español" class="lang-flag-icon">
+                        <span>ES</span>
+                        <svg width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" class="lang-dropdown-arrow" style="margin-left: 0.1rem;">
+                            <path d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="lang-dropdown">
+                        <button data-lang="es" class="active">
+                            <img src="./assets/flag_co.svg" alt="Español" class="lang-flag-icon">
+                            <span>ES (Español)</span>
+                        </button>
+                        <button data-lang="en">
+                            <img src="./assets/flag_us.svg" alt="English" class="lang-flag-icon">
+                            <span>EN (English)</span>
+                        </button>
+                        <button data-lang="fr">
+                            <img src="./assets/flag_fr.svg" alt="Français" class="lang-flag-icon">
+                            <span>FR (Français)</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Botón principal de solicitud en el header -->
+                <a href="#contacto" class="btn btn-accent nav-btn-vinculacion">Solicitar Asesoría</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <!-- 
+        ========================================================================
+           VISTA 1: HOME (CON SLIDESHOW Y ABRERBOCAS/TEASERS DE SUBPÁGINAS)
+        ========================================================================
+        -->
+        <div id="view-home" class="view active">
+            
+            <!-- Hero Auto-Slideshow con Barra de Progreso -->
+            <section class="hero-slideshow" aria-label="Carrusel de anuncios principales">
+                <!-- Navigation Arrows for Desktop -->
+                <button class="slideshow-arrow prev" id="slide-prev-btn" aria-label="Diapositiva anterior">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+                <button class="slideshow-arrow next" id="slide-next-btn" aria-label="Siguiente diapositiva">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+
+                <div class="slides-container">
+                    
+                    <!-- Slide 1: Líneas de Investigación -->
+                    <div class="slide active" data-index="0">
+                        <div class="slide-bg" style="background-image: url('./assets/pexels-karola-g-7876144.jpg');"></div>
+                        <div class="container">
+                            <div class="slide-content">
+                                <span class="slide-tag">Líneas de investigación</span>
+                                <h2>Áreas y líneas de investigación jurídica</h2>
+                                <p>Conozca nuestros campos de estudio en derecho, gobernanza, políticas públicas y sostenibilidad para aportar soluciones reales a los desafíos regionales y nacionales.</p>
+                                <a href="#lineas-investigacion" class="btn btn-cta-secondary">Conocer líneas de investigación</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2: Proyecto Destacado (Jóvenes para el Mundo) -->
+                    <div class="slide" data-index="1">
+                        <div class="slide-bg" style="background-image: url('./assets/pexels-sora-shimazaki-5669619.jpg');"></div>
+                        <div class="container">
+                            <div class="slide-content">
+                                <span class="slide-tag">Proyecto de impacto social</span>
+                                <h2>Programa Jóvenes para el Mundo en Atlántico</h2>
+                                <p>Iniciativa facilitando el acceso a educación superior y para el trabajo mediante apoyos económicos y becas, aportando al cierre de brechas sociales en el departamento del Atlántico.</p>
+                                <a href="#proyectos" class="btn btn-cta-secondary">Ver proyecto</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 3: Servicios Especializados -->
+                    <div class="slide" data-index="2">
+                        <div class="slide-bg" style="background-image: url('./assets/laboratorios-psicologia-camara-gessel-unicosta-cuc-2-800x395.jpg');"></div>
+                        <div class="container">
+                            <div class="slide-content">
+                                <span class="slide-tag">Servicios especializados</span>
+                                <h2>Servicios especializados y laboratorios jurídicos</h2>
+                                <p>Acceda a litigio internacional, consultoría técnica, asesoría sociojurídica integral y el uso de laboratorios de última generación como Jurisverso y Cámara de Gesell.</p>
+                                <a href="#portafolio" class="btn btn-cta-secondary">Ver servicios especializados</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Barra de progreso lineal -->
+                <div class="slideshow-progress">
+                    <div class="progress-bar"></div>
+                </div>
+                
+                <!-- Indicadores de puntos (dots) -->
+                <div class="slideshow-dots" role="tablist">
+                    <span class="dot active" role="tab" aria-selected="true" data-slide="0" aria-label="Ir a diapositiva 1"></span>
+                    <span class="dot" role="tab" aria-selected="false" data-slide="1" aria-label="Ir a diapositiva 2"></span>
+                    <span class="dot" role="tab" aria-selected="false" data-slide="2" aria-label="Ir a diapositiva 3"></span>
+                </div>
+            </section>
+            
+            <!-- Presentación Audiovisual Premium -->
+            <section class="intro-multimedia-section gsap-reveal" aria-label="Presentación Institucional del Centro Sociojurídico">
+                <div class="container">
+                    
+                    <!-- Tag Pill Superior -->
+                    <div class="intro-tag-pill-container">
+                        <span class="intro-tag-pill">Centro de Investigaciones Sociojurídicas y Políticas</span>
+                    </div>
+                    
+                    <!-- Título Principal -->
+                    <h2 class="intro-title">Transformamos conocimiento en soluciones sociojurídicas</h2>
+                    
+                    <!-- Descripción -->
+                    <p class="intro-description">
+                        El Centro de Investigaciones SocioJurídicas y Políticas (CISyP) del Departamento de Derecho y Ciencias Políticas de la Universidad de la Costa (CUC) promueve, dirige y coordina la investigación en ciencia, tecnología e innovación, brindando soluciones integrales a entidades públicas, organizaciones privadas y comunidades.
+                    </p>
+                    
+                    <!-- Contenedor de Video 16:9 -->
+                    <div class="intro-video-container">
+                        <div class="intro-video-overlay" style="background-image: url('./assets/fotofondo-overlay-equipo.png'); background-position: center;">
+                            <div class="intro-video-overlay-tint"></div>
+                            <button class="intro-play-btn" aria-label="Reproducir video institucional">
+                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="40" cy="40" r="38" stroke="#FFFFFF" stroke-width="3" fill="rgba(164, 34, 35, 0.95)"/>
+                                    <path d="M52 40L32 51.547L32 28.453L52 40Z" fill="#FFFFFF"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Botones de Acción -->
+                    <div class="intro-action-buttons">
+                        <a href="#sobre-nosotros" class="btn btn-primary-custom">Conocer más</a>
+                        <a href="#lineas-investigacion" class="btn btn-secondary-custom">Líneas de investigación</a>
+                    </div>
+                    
+                </div>
+            </section>
+            
+            <!-- Teaser de Servicios con Libro 3D -->
+            <section class="services-teaser-section" aria-label="Portafolio de servicios">
+                <div class="container">
+                    <div class="services-teaser-grid">
+                        <div class="services-teaser-text gsap-reveal">
+                            <span class="case-tag">Portafolio Profesional</span>
+                            <h2>Descubre nuestro portafolio de servicios jurídicos</h2>
+                            <p>Conozca la oferta integral del Centro de Investigaciones SocioJurídicas y Políticas (CISyP): asesoría técnica, laboratorios especializados, litigio internacional, consultoría comunitaria en clínica jurídica y formación de alto impacto del Departamento de Derecho y Ciencias Políticas.</p>
+                            <a href="#portafolio" class="btn-outline-custom">Ver nuestros servicios</a>
+                        </div>
+                        <div class="services-teaser-book gsap-reveal">
+                            <div class="book">
+                                <div class="gap"></div>
+                                <div class="pages">
+                                    <div class="page"></div>
+                                    <div class="page"></div>
+                                    <div class="page"></div>
+                                    <div class="page"></div>
+                                    <div class="page"></div>
+                                    <div class="page"></div>
+                                </div>
+                                <div class="flips">
+                                    <div class="flip flip1">
+                                        <div class="flip flip2">
+                                            <div class="flip flip3">
+                                                <div class="flip flip4">
+                                                    <div class="flip flip5">
+                                                        <div class="flip flip6">
+                                                            <div class="flip flip7"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Casos de Éxito Destacados -->
+            <section class="featured-cases-section gsap-reveal" aria-label="Casos de éxito destacados">
+                <div class="container">
+                    <div class="section-title">
+                        <span>Impacto Real</span>
+                        <h2>Casos de éxito destacados</h2>
+                        <p style="max-width: 800px; margin: 1rem auto 0 auto; color: var(--color-text-muted); font-size: 1rem; line-height: 1.6;">Resultados tangibles y alianzas estratégicas del CISyP que respaldan nuestra excelencia técnica y compromiso con la gestión pública e institucional.</p>
+                    </div>
+                    
+                    <div class="case-grid">
+                        <div class="case-image-col">
+                            <img src="./assets/pexels-pavel-danilyuk-8112121.jpg" alt="Proceso de Elección Contralor de Pereira">
+                        </div>
+                        <div class="case-info-col">
+                            <span class="case-tag">Servicios Especializados</span>
+                            <h3>Proceso de Elección Contralor de Pereira</h3>
+                            <p>Prestación de servicios especializados para el desarrollo integral de las etapas del proceso de convocatoria pública y elección del contralor municipal de Pereira para la vigencia constitucional 2026 - 2029.</p>
+                            <a href="#proyectos" class="btn-outline-custom">Ver casos de éxito</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección: Equipo de Trabajo Teaser -->
+            <section class="team-teaser-section" aria-label="Equipo de Trabajo">
+                <div class="container">
+                    <div class="team-teaser-grid">
+                        <div class="case-info-col">
+                            <span class="case-tag team-teaser-tag">Nuestro equipo</span>
+                            <h3>Profesionales y especialistas<br>al servicio de la sociedad</h3>
+                            <p style="margin-bottom: 2rem; color: var(--color-text-muted); line-height: 1.6;">Contamos con un grupo interdisciplinario de directivos, docentes investigadores y gestores de proyectos altamente capacitados en el ámbito sociojurídico, litigio, consultoría y políticas públicas.</p>
+                            <a href="#equipo" class="btn-outline-custom">Conocer al equipo</a>
+                        </div>
+                        <div class="case-image-col">
+                            <img src="./assets/foto-home-nuestroequipo.png" alt="Foto Grupal de Nuestro Equipo CISyP">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Llamado a la Acción (CTA final de Home antes de footer) -->
+            <section class="home-cta-section" aria-label="Llamado a la acción institucional">
+                <div class="container">
+                    <div class="home-cta-card gsap-reveal">
+                        <div class="home-cta-content">
+                            <h2>Potencie sus iniciativas jurídicas e institucionales</h2>
+                            <p>Si su organización o entidad requiere asesoría técnica, consultoría sociojurídica o acompañamiento en proyectos estratégicos, contáctese con nuestro equipo de especialistas.</p>
+                            <a href="#contacto" class="btn btn-cta-secondary">Solicitar Asesoría</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+        
+        <!-- 
+        ========================================================================
+           VISTA 2: SOBRE NOSOTROS (BLOQUES BIEN DIAGRAMADOS CON JERARQUÍA)
+        ========================================================================
+        -->
+        <div id="view-sobre-nosotros" class="view">
+            <header class="subpage-hero">
+                <div class="hero-bg" style="background-image: url('./assets/DSC08423.jpg'); background-position: center 65%;"></div>
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>Sobre Nosotros</h1>
+                    <div class="squiggly-line"></div>
+                </div>
+                <div class="custom-shape-divider-top-1789578400">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M0,120 C300,50 900,150 1200,30 L1200,120 L0,120 Z" class="shape-fill"></path>
+                    </svg>
+                </div>
+            </header>
+            
+            <section aria-label="Acerca del Centro Sociojurídico" style="padding-top: 2rem;">
+                <div class="container">
+                    
+                    <div class="about-blocks">
+                        
+                        <!-- Bloque 1: Quiénes Somos -->
+                        <div class="about-block-row gsap-reveal">
+                            <div class="about-text-box">
+                                <h3>¿Quiénes somos?</h3>
+                                <p>El Centro de Investigaciones SocioJurídicas y Políticas (CISyP) es responsable de dirigir, coordinar, promover y fortalecer la investigación en ciencia, tecnología e innovación dentro de las áreas jurídica, sociojurídica y política del Departamento de Derecho y Ciencias Políticas de la Universidad de la Costa (CUC). Su labor consiste en fomentar la implementación de las políticas de ciencia, tecnología e innovación establecidas en el Proyecto Educativo Institucional, articulándose con los diversos actores del Departamento, la comunidad universitaria y los grupos de interés.</p>
+                            </div>
+                            <div class="about-img-box">
+                                <img src="./assets/DSC08041.jpg" alt="Quiénes Somos - CISyP CUC">
+                            </div>
+                        </div>
+                        
+                        <!-- Bloque 2: Misión y Visión (Dos Columnas) -->
+                        <div class="about-block-row reverse gsap-reveal">
+                            <div class="about-img-box">
+                                <img src="./assets/DSC07866.jpg" alt="Misión y Visión - CISyP CUC">
+                            </div>
+                            <div class="about-text-box">
+                                <h3>Misión y Visión</h3>
+                                <div style="display: grid; gap: 2rem;">
+                                    <div>
+                                        <h4 class="mission-title" style="font-size: 1.15rem; color: var(--color-red); margin-bottom: 0.5rem; font-weight: 700;">Nuestra Misión</h4>
+                                        <p class="mission-desc" style="font-size: 0.9rem;">El Centro de Investigaciones Sociojurídicas y Políticas “CISyP”, tiene como misión la formación, producción, divulgación y aplicación de conocimientos científicos en las Ciencias Juridicas y políticas, mediante la planeación, organización y promoción de la investigación disciplinar, interdisciplinar y transdisciplinar, la producción intelectual, la innovación y la apropiación social del conocimiento, que de respuesta a las necesidades de las disciplinas, el contexto socioeconómico y el desarrolo de competencias en el ámbito de la ciencia, la tecnología, el arte y la cultura.</p>
+                                    </div>
+                                    <div style="border-top: 1.5px solid var(--color-border); padding-top: 1.5rem;">
+                                        <h4 class="vision-title" style="font-size: 1.15rem; color: var(--color-red); margin-bottom: 0.5rem; font-weight: 700;">Nuestra Visión</h4>
+                                        <p class="vision-desc" style="font-size: 0.9rem;">El Centro de Investigaciones Sociojurídicas y Políticas “CISyP”, será un centro de investigaciones en las ciencias Jurídica y Políticas reconocido por la comunidad académica nacional e internacional por sus logros investigativos que contribuyan al desarrolo sostenible de su contexto, y por su alto nivel de productividad y de participación en redes académicas y científicas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- 
+        ========================================================================
+           VISTA 3: PORTAFOLIO DE SERVICIOS Y SERVICIOS ESTRATÉGICOS
+        ========================================================================
+        -->
+        <div id="view-portafolio" class="view">
+            <header class="subpage-hero">
+                <div class="hero-bg" style="background-image: url('./assets/DSC07998.jpg'); background-position: center 60%;"></div>
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>Servicios y Portafolio</h1>
+                    <div class="squiggly-line"></div>
+                </div>
+                <div class="custom-shape-divider-top-1789578400">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M0,120 C300,50 900,150 1200,30 L1200,120 L0,120 Z" class="shape-fill"></path>
+                    </svg>
+                </div>
+            </header>
+
+            <!-- Servicios Estratégicos -->
+            <section aria-label="Servicios del Centro" style="padding-top: 2rem; padding-bottom: 0;">
+                <div class="container">
+                    <div class="subpage-section-title">
+                        <h2>¿Qué ofrecemos?</h2>
+                        <p class="gsap-reveal">
+                            Brindamos soluciones especializadas, asesoría técnica y formación en investigación sociojurídica y política para la comunidad académica, el sector público y organizaciones de la sociedad civil.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="services-scroll-sequence-wrapper">
+                    <section class="horizontal-section">
+                        <div class="wrapper">
+                            <div role="list" class="list">
+                            
+                            <div role="listitem" class="item">
+                                <div class="item-inner-container">
+                                    <div class="item_content">
+                                        <div class="item_number">1</div>
+                                        <h2>Servicios de Asesoría Técnica</h2>
+                                        <p class="item_p">Brindamos asesoría en gestión de la indexación de revistas y consultoría técnica en intervención en política pública derivada de procesos de investigación y extensión. Asimismo, ofrecemos asesoría técnica en la generación de productos científicos derivados de proyectos de investigación y en producción científica con visibilidad e impacto, junto con asesoría especializada para la estructuración de proyectos de Regalías.</p>
+                                    </div>
+                                    <div class="item_media" style="background-image: url('./assets/DSC08281.jpg');"></div>
+                                </div>
+                            </div>
+
+                            <div role="listitem" class="item">
+                                <div class="item-inner-container">
+                                    <div class="item_content">
+                                        <div class="item_number">2</div>
+                                        <h2>Laboratorios Especializados</h2>
+                                        <p class="item_p">Ponemos a su disposición el Laboratorio Jurisverso para ejercicios simulados virtuales, integrando la práctica formativa en el Laboratorio de Oralidad y el soporte para la investigación experimental en el Laboratorio Cámara de Gesell.</p>
+                                    </div>
+                                    <div class="item_media" style="background-image: url('./assets/laboratorios-psicologia-camara-gessel-unicosta-cuc-2-800x395.jpg');"></div>
+                                </div>
+                            </div>
+
+                            <div role="listitem" class="item">
+                                <div class="item-inner-container">
+                                    <div class="item_content">
+                                        <div class="item_number">3</div>
+                                        <h2>Servicios Especializados</h2>
+                                        <p class="item_p">Ofrecemos preparación estratégica en Litigio Internacional de alto nivel, así como la atención, asesoría y acompañamiento sociojurídico integral desarrollado mediante nuestra Clínica Jurídica.</p>
+                                    </div>
+                                    <div class="item_media" style="background-image: url('./assets/Group-102-1-400x454.png');"></div>
+                                </div>
+                            </div>
+
+                            <div role="listitem" class="item">
+                                <div class="item-inner-container">
+                                    <div class="item_content">
+                                        <div class="item_number">4</div>
+                                        <h2>Formación en Metodología de la Investigación</h2>
+                                        <p class="item_p">Desarrollamos programas de formación en producción científica con visibilidad e impacto, apropiación social del conocimiento y enfoque diferencial para la investigación. Además, capacitamos en formulación de proyectos de desarrollo, gobernanza y políticas públicas, así como en la preparación para la presentación del Examen de Idoneidad Profesional de Abogados (Ley 1905 de 2018).</p>
+                                    </div>
+                                    <div class="item_media" style="background-image: url('./assets/pexels-pavel-danilyuk-8111815.jpg');"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+            <!-- Portafolio de Consultas (Flipbook Premium) -->
+            <section aria-label="Portafolio de servicios" class="flipbook-section" style="padding-top: 2.5rem;">
+                <div class="container">
+                    <div class="subpage-section-title portfolio-section-title">
+                        <h2 class="gsap-reveal">Portafolio de servicios</h2>
+                        <p class="gsap-reveal">
+                            Explore nuestro catálogo digital interactivo para conocer a detalle las líneas de consultoría, laboratorios y oferta formativa del CISyP o descargue el documento oficial en formato PDF.
+                        </p>
+                    </div>
+
+                    <!-- FLIPBOOK CONTROLLER -->
+                    <div class="flipbook-wrapper gsap-reveal">
+                        <!-- Navigation Arrows -->
+                        <button class="flipbook-arrow prev" id="fb-prev-btn" aria-label="Página anterior">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+
+                        <div class="flipbook-container">
+                            <div class="book">
+                                <div class="book-spine"></div>
+                                
+                                <!-- Sheet 1 -->
+                                <div id="p1" class="paper">
+                                    <div class="front">
+                                        <img src="./assets/portfolio-page-1.png" alt="Portafolio - Página 1" class="fb-img">
+                                    </div>
+                                    <div class="back">
+                                        <img src="./assets/portfolio-page-2.png" alt="Portafolio - Página 2" class="fb-img">
+                                    </div>
+                                </div>
+
+                                <!-- Sheet 2 -->
+                                <div id="p2" class="paper">
+                                    <div class="front">
+                                        <img src="./assets/portfolio-page-3.png" alt="Portafolio - Página 3" class="fb-img">
+                                    </div>
+                                    <div class="back">
+                                        <img src="./assets/portfolio-page-4.png" alt="Portafolio - Página 4" class="fb-img">
+                                    </div>
+                                </div>
+
+                                <!-- Sheet 3 -->
+                                <div id="p3" class="paper">
+                                    <div class="front">
+                                        <img src="./assets/portfolio-page-5.png" alt="Portafolio - Página 5" class="fb-img">
+                                    </div>
+                                    <div class="back">
+                                        <img src="./assets/portfolio-page-6.png" alt="Portafolio - Página 6" class="fb-img">
+                                    </div>
+                                </div>
+
+                                <!-- Sheet 4 -->
+                                <div id="p4" class="paper">
+                                    <div class="front">
+                                        <img src="./assets/portfolio-page-7.png" alt="Portafolio - Página 7" class="fb-img">
+                                    </div>
+                                    <div class="back">
+                                        <img src="./assets/portfolio-page-8.png" alt="Portafolio - Página 8" class="fb-img">
+                                    </div>
+                                </div>
+
+                                <!-- Sheet 5 -->
+                                <div id="p5" class="paper">
+                                    <div class="front">
+                                        <img src="./assets/portfolio-page-9.png" alt="Portafolio - Página 9" class="fb-img">
+                                    </div>
+                                    <div class="back">
+                                        <img src="./assets/portfolio-page-10.png" alt="Portafolio - Página 10" class="fb-img">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <button class="flipbook-arrow next" id="fb-next-btn" aria-label="Siguiente página">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Mobile Fallback -->
+                    <div class="flipbook-mobile-fallback gsap-reveal">
+                        <p>Para experimentar la lectura interactiva en 3D de nuestro portafolio de servicios, le recomendamos visitarnos desde una pantalla de escritorio.</p>
+                    </div>
+
+                    <!-- PDF DOWNLOAD SECTION -->
+                    <div class="pdf-download-section gsap-reveal">
+                        <div class="pdf-download-card">
+                            <div class="pdf-icon-wrapper">
+                                <svg width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                </svg>
+                            </div>
+                            <div class="pdf-info">
+                                <h3>Descargar Portafolio en PDF</h3>
+                                <p>Explore nuestro catálogo digital interactivo para conocer a detalle las líneas de consultoría, laboratorios y oferta formativa del CISyP o descargue el documento oficial en formato PDF.</p>
+                            </div>
+                            <a href="./assets/Portafolio_CISyP.pdf" download="Portafolio_CISyP.pdf" class="btn btn-accent download-pdf-btn">
+                                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" style="margin-right: 0.5rem; display:inline-block; vertical-align:middle;">
+                                    <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                                </svg>
+                                Descargar PDF
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+        
+        <!-- 
+        ========================================================================
+           VISTA 4: PROYECTOS DESTACADOS
+        ========================================================================
+        -->
+        <div id="view-proyectos" class="view">
+            <header class="subpage-hero">
+                <div class="hero-bg" style="background-image: url('./assets/DSC07866.jpg'); background-position: center 60%;"></div>
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>Proyectos Destacados</h1>
+                    <div class="squiggly-line"></div>
+                </div>
+                <div class="custom-shape-divider-top-1789578400">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M0,120 C300,50 900,150 1200,30 L1200,120 L0,120 Z" class="shape-fill"></path>
+                    </svg>
+                </div>
+            </header>
+            
+            <section aria-label="Proyectos e iniciativas" style="padding-top: 2rem; padding-bottom: 0;">
+                <div class="container">
+                    <div class="subpage-section-title">
+                        <h2>¿Qué iniciativas de impacto hemos liderado?</h2>
+                        <p>Descubra las principales convocatorias, asistencias técnicas y proyectos de alto impacto liderados por el CISyP en articulación con entidades territoriales y organismos públicos.</p>
+                    </div>
+                </div>
+
+                <div class="projects-scroll-sequence-wrapper">
+                    <div class="vertical-projects-section">
+                        <div class="projects-wrapper">
+                            
+                            <!-- Proyecto 1: Concejo Distrital de Santa Marta -->
+                            <div class="project-item">
+                                <div class="project-case-card">
+                                    <div class="project-image-col" style="background-image: url('./assets/pexels-vuralyavas-14208025.jpg');" aria-label="Elección de Contralor Distrital de Santa Marta"></div>
+                                    <div class="project-info-col">
+                                        <span class="project-tag">Servicios de Asesoría Técnica</span>
+                                        <span class="project-client-name">Concejo Distrital de Santa Marta</span>
+                                        <h3>Elección de Contralor Distrital de Santa Marta</h3>
+                                        <p>Acompañamos a la mesa directiva de la corporación en las etapas y realización de la prueba de conocimientos para la convocatoria pública de elección del cargo de contralor distrital de Santa Marta (periodo 2022-2025).</p>
+                                        <a href="#contacto" class="btn-outline-custom">Solicitar asesoría técnica</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Proyecto 2: Gobernación del Atlántico -->
+                            <div class="project-item">
+                                <div class="project-case-card reverse">
+                                    <div class="project-image-col" style="background-image: url('./assets/pexels-sora-shimazaki-5669619.jpg');" aria-label="Programa Jóvenes para el Mundo en Atlántico"></div>
+                                    <div class="project-info-col">
+                                        <span class="project-tag">Formación y Desarrollo</span>
+                                        <span class="project-client-name">Gobernación del Atlántico</span>
+                                        <h3>Programa Jóvenes para el Mundo en Atlántico</h3>
+                                        <p>Iniciativa "Jóvenes para el Mundo" facilitando el acceso a educación superior y para el trabajo mediante apoyos económicos y becas parciales, contribuyendo a proyectos de vida y cierre de brechas sociales en el Atlántico.</p>
+                                        <a href="#contacto" class="btn-outline-custom">Conocer programas de formación</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <!-- Proyecto 3: Concejo de Pereira -->
+                            <div class="project-item">
+                                <div class="project-case-card">
+                                    <div class="project-image-col" style="background-image: url('./assets/pexels-pavel-danilyuk-8112121.jpg');" aria-label="Proceso de Elección Contralor de Pereira"></div>
+                                    <div class="project-info-col">
+                                        <span class="project-tag">Servicios Especializados</span>
+                                        <span class="project-client-name">Concejo de Pereira</span>
+                                        <h3>Proceso de Elección Contralor de Pereira</h3>
+                                        <p>Prestación de servicios especializados para el desarrollo integral de las etapas del proceso de convocatoria pública y elección del contralor municipal de Pereira para la vigencia constitucional 2026 - 2029.</p>
+                                        <a href="#contacto" class="btn-outline-custom">Solicitar consultoría especializada</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Proyecto 4: Asamblea Departamental del Putumayo -->
+                            <div class="project-item">
+                                <div class="project-case-card reverse">
+                                    <div class="project-image-col" style="background-image: url('./assets/pexels-tahaasamett-7781900.jpg'); background-position: center 85%;" aria-label="Selección por Mérito Contralor del Putumayo"></div>
+                                    <div class="project-info-col">
+                                        <span class="project-tag">Servicios de Asesoría Técnica</span>
+                                        <span class="project-client-name">Asamblea Departamental del Putumayo</span>
+                                        <h3>Selección por Mérito Contralor del Putumayo</h3>
+                                        <p>Acompañamiento técnico e imparcial en el proceso de selección basado en el mérito y pruebas de conocimiento para proveer el cargo de contralor departamental del Putumayo para el periodo 2026 - 2029.</p>
+                                        <a href="#contacto" class="btn-outline-custom">Solicitar acompañamiento técnico</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Proyecto 5: Asamblea Departamental de Caldas -->
+                            <div class="project-item">
+                                <div class="project-case-card">
+                                    <div class="project-image-col" style="background-image: url('./assets/pexels-karola-g-7876045.jpg');" aria-label="Convocatoria Pública Contralor de Caldas"></div>
+                                    <div class="project-info-col">
+                                        <span class="project-tag">Servicios de Asesoría Técnica</span>
+                                        <span class="project-client-name">Asamblea Departamental de Caldas</span>
+                                        <h3>Convocatoria Pública Contralor de Caldas</h3>
+                                        <p>Acompañamiento institucional y técnico con acreditación en alta calidad para adelantar la convocatoria pública y evaluación de aspirantes a contralor general del departamento de Caldas (periodo 2026-2029).</p>
+                                        <a href="#contacto" class="btn-outline-custom">Solicitar evaluación institucional</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Llamado a la Acción (CTA final de Proyectos) -->
+            <section class="home-cta-section" aria-label="Llamado a la acción para proyectos y asesorías">
+                <div class="container">
+                    <div class="home-cta-card gsap-reveal">
+                        <div class="home-cta-content">
+                            <h2>Potencie sus iniciativas jurídicas e institucionales</h2>
+                            <p>Si su organización o entidad requiere asesoría técnica, consultoría sociojurídica o acompañamiento en proyectos estratégicos, contáctese con nuestro equipo de especialistas.</p>
+                            <a href="#contacto" class="btn btn-cta-secondary">Solicitar Asesoría</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- 
+        ========================================================================
+           VISTA 5: LÍNEAS DE INVESTIGACIÓN Y SUBLÍNEAS
+        ========================================================================
+        -->
+        <div id="view-lineas-investigacion" class="view">
+            <header class="subpage-hero">
+                <div class="hero-bg" style="background-image: url('./assets/pexels-karola-g-7876144.jpg'); background-position: center 30%;"></div>
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>Líneas de Investigación</h1>
+                    <div class="squiggly-line"></div>
+                </div>
+                <div class="custom-shape-divider-top-1789578400">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M0,120 C300,50 900,150 1200,30 L1200,120 L0,120 Z" class="shape-fill"></path>
+                    </svg>
+                </div>
+            </header>
+            
+            <!-- Líneas de Investigación Intro -->
+            <div class="container" style="padding-top: 2rem; padding-bottom: 0;">
+                <div class="subpage-section-title">
+                    <h2>¿Qué áreas de investigación lideramos?</h2>
+                    <p class="gsap-reveal">
+                        El Centro de Investigaciones SocioJurídicas y Políticas (CISyP) del Departamento de Derecho y Ciencias Políticas lidera campos de indagación científica orientados a la producción académica de alto impacto, la transformación social y el fortalecimiento del Estado Social de Derecho.
+                    </p>
+                </div>
+            </div>
+
+            <section class="research-section-new" id="researchSection" aria-label="Líneas de investigación" style="padding-top: 2rem;">
+                <div class="research-container-new">
+
+                    <div class="research-left-col">
+                        <div class="research-image-sticky" style="background-image: url('./assets/pexels-antonio-mena-236007774-33352856.jpg');"></div>
+                    </div>
+
+                    <div class="research-right-col">
+                        <div class="research-content-wrapper" id="researchWrapper">
+                            <div class="timeline-track">
+                                <div class="timeline-progress" id="timelineProgress"></div>
+                            </div>
+
+                            <div class="research-items">
+                                <!-- Línea 1 -->
+                                <div class="research-item">
+                                    <span class="research-item-tag">Línea Principal</span>
+                                    <h3>Gobernanza, políticas públicas y desarrollo sostenible</h3>
+                                    <p>Orientada al estudio de los procesos de formulación, implementación y evaluación de políticas públicas, la gobernanza territorial, la participación ciudadana, la gestión pública y los mecanismos de fortalecimiento institucional para el desarrollo sostenible.</p>
+                                </div>
+
+                                <!-- Línea 2 -->
+                                <div class="research-item">
+                                    <span class="research-item-tag">Línea Principal</span>
+                                    <h3>Justicia, derechos humanos y transformación social</h3>
+                                    <p>Dirigida al análisis de los sistemas de protección de derechos humanos, acceso a la justicia, grupos vulnerables, construcción de ciudadanía, cultura de paz, inclusión social y fortalecimiento del Estado Social de Derecho.</p>
+                                </div>
+
+                                <!-- Línea 3 -->
+                                <div class="research-item">
+                                    <span class="research-item-tag">Línea Principal</span>
+                                    <h3>Derecho, empresa e innovación organizacional</h3>
+                                    <p>Orientada al estudio de los fenómenos jurídicos asociados al desarrollo empresarial, la competitividad, el derecho corporativo, la responsabilidad social, la sostenibilidad organizacional y la regulación económica.</p>
+                                </div>
+
+                                <!-- Línea 4 -->
+                                <div class="research-item">
+                                    <span class="research-item-tag">Línea Principal</span>
+                                    <h3>Transformación digital, inteligencia artificial y regulación tecnológica</h3>
+                                    <p>Enfocada en el análisis jurídico y político de las tecnologías emergentes, inteligencia artificial, protección de datos, gobierno digital, ciberseguridad, evidencia digital, innovación pública y transformación digital.</p>
+                                </div>
+
+                                <!-- Línea 5 -->
+                                <div class="research-item">
+                                    <span class="research-item-tag">Línea Principal</span>
+                                    <h3>Educación, cultura jurídica y apropiación social del conocimiento</h3>
+                                    <p>Orientada al estudio de los procesos educativos, innovación pedagógica, formación jurídica, cultura ciudadana, alfabetización legal y estrategias de apropiación social del conocimiento.</p>
+                                </div>
+
+                                <!-- Línea 6 -->
+                                <div class="research-item">
+                                    <span class="research-item-tag">Línea Principal</span>
+                                    <h3>Territorio, ambiente y desarrollo humano sostenible</h3>
+                                    <p>Dirigida al estudio de los conflictos socioambientales, justicia ambiental, ordenamiento territorial, sostenibilidad, cambio climático, gestión del riesgo y protección de recursos naturales desde una perspectiva jurídica y política.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Espaciador fuera del flex -->
+                <div class="research-scroll-spacer"></div>
+            </section>
+        </div>
+        
+        <!-- 
+        ========================================================================
+           VISTA 6: EQUIPO DEL CENTRO (7 MIEMBROS)
+        ========================================================================
+        -->
+        <div id="view-equipo" class="view">
+            <header class="subpage-hero">
+                <div class="hero-bg" style="background-image: url('./assets/fotofondo-overlay-equipo.png'); background-position: center;"></div>
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>Nuestro Equipo</h1>
+                    <div class="squiggly-line"></div>
+                </div>
+                <div class="custom-shape-divider-top-1789578400">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M0,120 C300,50 900,150 1200,30 L1200,120 L0,120 Z" class="shape-fill"></path>
+                    </svg>
+                </div>
+            </header>
+            
+            <section aria-label="Equipo del Centro" style="padding-top: 2rem;">
+                <div class="container">
+                    <div class="subpage-section-title">
+                        <h2>¿Quiénes integran el grupo de profesionales?</h2>
+                        <p class="gsap-reveal">Conozca al equipo directivo, docente e investigador del CISyP, un grupo multidisciplinario comprometido con la excelencia académica, el rigor científico y el impacto social.</p>
+                    </div>
+                    
+                    <!-- 3D Carousel container -->
+                    <div class="carousel-container gsap-reveal">
+                        <button class="team-carousel-arrow prev" id="team-prev-btn" aria-label="Anterior miembro">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="carousel-track">
+                            <!-- Miembro 1: Beliña Herrera Tapias -->
+                            <div class="card team-card" data-index="0" data-name-es="Beliña Herrera Tapias" data-role-es="Decana del Departamento de Derecho y Ciencias Políticas" data-name-en="Beliña Herrera Tapias" data-role-en="Dean of the Department of Law and Political Science" data-name-fr="Beliña Herrera Tapias" data-role-fr="Doyenne du Département de Droit et Sciences Politiques" data-email="bherrera3@cuc.edu.co">
+                                <div class="team-img-box">
+                                    <img src="./assets/miembro-belina-herrera.png" draggable="false" alt="Beliña Herrera Tapias">
+                                </div>
+                            </div>
+                            <!-- Miembro 2: Giselle De La Torre Soto -->
+                            <div class="card team-card" data-index="1" data-name-es="Giselle De La Torre Soto" data-role-es="Directora del Centro de Investigaciones Sociojurídicas y Políticas" data-name-en="Giselle De La Torre Soto" data-role-en="Director of the Socio-Legal and Political Research Center" data-name-fr="Giselle De La Torre Soto" data-role-fr="Directrice du Centre de Recherches Socio-Juridiques et Politiques" data-email="gdelator2@cuc.edu.co">
+                                <div class="team-img-box">
+                                    <img src="./assets/miembro-giselle-delatorre.png" draggable="false" alt="Giselle De La Torre Soto">
+                                </div>
+                            </div>
+                            <!-- Miembro 3: Paola Carvajal Muñoz -->
+                            <div class="card team-card" data-index="2" data-name-es="Paola Carvajal Muñoz" data-role-es="Directora del Programa de Derecho" data-name-en="Paola Carvajal Muñoz" data-role-en="Director of the Law Program" data-name-fr="Paola Carvajal Muñoz" data-role-fr="Directrice du Programme de Droit" data-email="pcarvaja1@cuc.edu.co">
+                                <div class="team-img-box">
+                                    <img src="./assets/miembro-paola-carvajal.png" draggable="false" alt="Paola Carvajal Muñoz">
+                                </div>
+                            </div>
+                            <!-- Miembro 4: Alejandra De Luque -->
+                            <div class="card team-card" data-index="3" data-name-es="Alejandra De Luque" data-role-es="Directora Maestría Derecho de la Empresa y Especialización en Derecho Comercial" data-name-en="Alejandra De Luque" data-role-en="Director of Master's in Corporate Law and Specialization in Commercial Law" data-name-fr="Alejandra De Luque" data-role-fr="Directrice du Master en Droit des Affaires et Spécialisation en Droit Commercial" data-email="adeluque3@cuc.edu.co">
+                                <div class="team-img-box">
+                                    <img src="./assets/miembro-alejandra-deluque.png" draggable="false" alt="Alejandra De Luque">
+                                </div>
+                            </div>
+                            <!-- Miembro 5: Katy Trespalacios Solano -->
+                            <div class="card team-card" data-index="4" data-name-es="Katy Trespalacios Solano" data-role-es="Coordinadora de Posgrado del Área de Derecho Laboral" data-name-en="Katy Trespalacios Solano" data-role-en="Postgraduate Coordinator of Labor Law" data-name-fr="Katy Trespalacios Solano" data-role-fr="Coordinatrice des Études Supérieures en Droit du Travail" data-email="ktrespal@cuc.edu.co">
+                                <div class="team-img-box">
+                                    <img src="./assets/miembro-katy-trespalacios.png" draggable="false" alt="Katy Trespalacios Solano">
+                                </div>
+                            </div>
+                            <!-- Miembro 6: Benjamín Lizarazo Mejía -->
+                            <div class="card team-card" data-index="5" data-name-es="Benjamín Lizarazo Mejía" data-role-es="Director del Consultorio Jurídico y del Centro de Conciliación" data-name-en="Benjamín Lizarazo Mejía" data-role-en="Director of the Legal Clinic and Conciliation Center" data-name-fr="Benjamín Lizarazo Mejía" data-role-fr="Directeur de la Clinique Juridique et du Centre de Conciliation" data-email="blizarazo@cuc.edu.co">
+                                <div class="team-img-box">
+                                    <img src="./assets/miembro-benjamin-lizarazo.png" draggable="false" alt="Benjamín Lizarazo Mejía">
+                                </div>
+                            </div>
+                            <!-- Miembro 7: Aldair Morales Cuadro -->
+                            <div class="card team-card" data-index="6" data-name-es="Aldair Morales Cuadro" data-role-es="Gestor de Proyectos del Programa de Derecho, Ciencias Sociales y Humanidades" data-name-en="Aldair Morales Cuadro" data-role-en="Project Manager, Law, Social Sciences and Humanities" data-name-fr="Aldair Morales Cuadro" data-role-fr="Gestionnaire de Projets, Droit, Sciences Sociales et Humanités" data-email="amorales10@cuc.edu.co">
+                                <div class="team-img-box">
+                                    <img src="./assets/miembro-aldair-morales.png" draggable="false" alt="Aldair Morales Cuadro">
+                                </div>
+                            </div>
+                            <!-- Miembro 8: Andrés Cruz Téllez (Villavicencio) -->
+                            <div class="card team-card" data-index="7" data-name-es="Andrés Cruz Téllez" data-role-es="Director Centro de Investigaciones Sociojurídicas y Políticas — Extensión Villavicencio" data-name-en="Andrés Cruz Téllez" data-role-en="Director of Socio-Legal and Political Research Center — Villavicencio Branch" data-name-fr="Andrés Cruz Téllez" data-role-fr="Directeur du Centre de Recherches Socio-Juridiques et Politiques — Antenne Villavicencio" data-email="acruz@cuc.edu.co">
+                                <div class="team-img-box">
+                                    <img src="./assets/miembro-andres-cruz.png" draggable="false" alt="Andrés Cruz Téllez">
+                                </div>
+                            </div>
+                            <!-- Miembro 9: Jhoana Guataquira Rincón (Villavicencio) -->
+                            <div class="card team-card" data-index="8" data-name-es="Jhoana Guataquira Rincón" data-role-es="Directora del Programa de Derecho — Extensión Villavicencio" data-name-en="Jhoana Guataquira Rincón" data-role-en="Director of the Law Program — Villavicencio Branch" data-name-fr="Jhoana Guataquira Rincón" data-role-fr="Directrice du Programme de Droit — Antenne Villavicencio" data-email="jguataqu1@cuc.edu.co">
+                                <div class="team-img-box">
+                                    <img src="./assets/miembro-jhoana-guataquira.png" draggable="false" alt="Jhoana Guataquira Rincón">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="team-carousel-arrow next" id="team-next-btn" aria-label="Siguiente miembro">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Member info and dots below -->
+                    <div class="member-info gsap-reveal">
+                        <h3 class="member-name">Beliña Herrera Tapias</h3>
+                        <p class="member-role">Decana del Departamento de Derecho y Ciencias Políticas</p>
+                        <p class="member-email"><a href="mailto:bherrera3@cuc.edu.co" class="team-email-link"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="display:inline-block; vertical-align:middle; margin-right:6px;"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>bherrera3@cuc.edu.co</a></p>
+                    </div>
+
+                    <div class="team-dots gsap-reveal">
+                        <div class="dot active" data-index="0" aria-label="Beliña Herrera Tapias"></div>
+                        <div class="dot" data-index="1" aria-label="Giselle De La Torre Soto"></div>
+                        <div class="dot" data-index="2" aria-label="Paola Carvajal Muñoz"></div>
+                        <div class="dot" data-index="3" aria-label="Alejandra De Luque"></div>
+                        <div class="dot" data-index="4" aria-label="Katy Trespalacios Solano"></div>
+                        <div class="dot" data-index="5" aria-label="Benjamín Lizarazo Mejía"></div>
+                        <div class="dot" data-index="6" aria-label="Aldair Morales Cuadro"></div>
+                        <div class="dot" data-index="7" aria-label="Andrés Cruz Téllez"></div>
+                        <div class="dot" data-index="8" aria-label="Jhoana Guataquira Rincón"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- 
+        ========================================================================
+           VISTA 7: CONTACTO
+        ========================================================================
+        -->
+        <div id="view-contacto" class="view">
+            <header class="subpage-hero">
+                <div class="hero-bg" style="background-image: url('./assets/pexels-joeofcochin-6593883.jpg'); background-position: center 35%;"></div>
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>Contacto</h1>
+                    <div class="squiggly-line"></div>
+                </div>
+                <div class="custom-shape-divider-top-1789578400">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M0,120 C300,50 900,150 1200,30 L1200,120 L0,120 Z" class="shape-fill"></path>
+                    </svg>
+                </div>
+            </header>
+            
+            <!-- Contacto Intro -->
+            <div class="container" style="padding-top: 2rem; padding-bottom: 0;">
+                <div class="subpage-section-title">
+                    <h2>¿Cómo podemos ayudarte a potenciar tus iniciativas?</h2>
+                    <p class="gsap-reveal">Póngase en contacto con nuestro equipo para recibir asesoría personalizada, coordinar visitas del consultorio o establecer alianzas estratégicas universitarias.</p>
+                </div>
+            </div>
+
+            <section aria-label="Contacto del Centro">
+                <div class="container">
+                    
+                    <div class="contact-layout">
+                        
+                        <!-- Datos de contacto -->
+                        <div class="contact-info-col gsap-reveal">
+                            <div class="contact-methods">
+                                <div class="method-card">
+                                    <span class="method-icon" aria-hidden="true">
+                                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                            <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                            <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                        </svg>
+                                    </span>
+                                    <div>
+                                        <h4>Ubicación</h4>
+                                        <p>Calle 58 # 55 – 66 Barranquilla, Colombia.<br>Bloque 7, piso 3<br><strong>Horario:</strong> 8 a.m. a 12 m. y 2 p.m. a 6 p.m.</p>
+                                    </div>
+                                </div>
+                                <div class="contact-map-mini">
+                                    <iframe 
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.425946452297!2d-74.79720492415177!3d11.00662245287956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42d13b4ea1743%3A0xc3ec48e0258163f4!2sUniversidad%20de%20la%20Costa!5e0!3m2!1ses!2sco!4v1717800000000!5m2!1ses!2sco" 
+                                        width="100%" 
+                                        height="100%" 
+                                        style="border:0;" 
+                                        allowfullscreen="" 
+                                        loading="lazy" 
+                                        referrerpolicy="no-referrer-when-downgrade"
+                                        title="Ubicación de la Universidad de la Costa">
+                                    </iframe>
+                                </div>
+                                <div class="method-card">
+                                    <span class="method-icon" aria-hidden="true">
+                                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                            <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                        </svg>
+                                    </span>
+                                    <div>
+                                        <h4>Correo electrónico</h4>
+                                        <p><a href="mailto:cisjp@cuc.edu.co" style="color: inherit; text-decoration: none;">cisjp@cuc.edu.co</a></p>
+                                    </div>
+                                </div>
+                                <div class="method-card">
+                                    <span class="method-icon" aria-hidden="true">
+                                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                            <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                        </svg>
+                                    </span>
+                                    <div>
+                                        <h4>Teléfono</h4>
+                                        <p>605 – 3225498</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Formulario de contacto -->
+                        <div class="form-card gsap-reveal">
+                            <h3 style="font-size: 1.25rem; color: var(--color-red-dark); margin-bottom: 1.5rem; font-weight: 700;">Formulario de solicitud de asesoría</h3>
+                            <form id="contacto-form" novalidate>
+                                <div class="form-group">
+                                    <label for="cont-name" class="form-label">Nombre o Razón Social *</label>
+                                    <input type="text" id="cont-name" class="form-control" placeholder="Ej. Juan Pérez / Organización" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cont-email" class="form-label">Correo Electrónico *</label>
+                                    <input type="email" id="cont-email" class="form-control" placeholder="Ej. contacto@ejemplo.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cont-message" class="form-label">Detalle su requerimiento o consulta *</label>
+                                    <textarea id="cont-message" class="form-control" placeholder="Describa brevemente qué tipo de asesoría o acompañamiento requiere..." required></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-accent" style="width: 100%;">Enviar mensaje de asesoría</button>
+                                
+                                <div class="form-feedback" role="alert"></div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-logo-desc">
+                    <img src="./assets/logo_cisyp_2024.png" alt="Logotipo CISyP CUC" class="footer-logo">
+                    <p>Centro de Investigaciones Sociojurídicas y Políticas de la Universidad de la Costa (CUC). Generando conocimiento científico, asesoría técnica y consultoría jurídica para la transformación social y el fortalecimiento institucional.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Mapa del sitio</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                        <li><a href="#portafolio">Portafolio</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#lineas-investigacion">Investigación</a></li>
+                        <li><a href="#equipo">Equipo</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Redes y Contacto</h4>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="https://www.instagram.com/cisjp_cuc/" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" style="display:inline-block; vertical-align:middle;">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                                @cisjp_cuc
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:cisjp@cuc.edu.co" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="display:inline-block; vertical-align:middle;">
+                                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                                cisjp@cuc.edu.co
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div>2026 Universidad de la Costa (CUC) - CISyP. Todos los derechos reservados, diseñado por <a href="https://www.instagram.com/ryderjbarrios_/" target="_blank" rel="noopener noreferrer">Ryder Barrios</a>.</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÓN VOLVER ARRIBA -->
+    <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path d="M5 15l7-7 7 7"></path>
+        </svg>
+    </button>
+
+    <!-- Scripts (GSAP, ScrollTrigger y Lógica principal) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="app.js?v=63"></script>
+</body>
+</html>
